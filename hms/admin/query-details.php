@@ -93,7 +93,7 @@ while($row=mysqli_fetch_array($sql))
 												<td><?php echo $row['email'];?></td>
 											</tr>
 											<tr>
-												<th>Conatact Numner</th>
+												<th>Contact Number</th>
 												<td><?php echo $row['contactno'];?></td>
 											</tr>
 											<tr>
@@ -101,9 +101,9 @@ while($row=mysqli_fetch_array($sql))
 												<td><?php echo $row['message'];?></td>
 												</tr>
 
-<?php if($row['AdminRemark']==""){?>	
-<form name="query" method="post">
-	<tr>
+                                       <?php if($row['AdminRemark']==""){?>	
+                                        <form name="query" method="post">
+	                                     <tr>
 												<th>Admin Remark</th>
 												<td><textarea name="adminremark" class="form-control" required="true"></textarea></td>
 												</tr>
