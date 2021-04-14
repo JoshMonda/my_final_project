@@ -55,9 +55,12 @@ exit();
 			
 			body
 			{
-				background-image: url("https://www.medibrandox.com/MediBrandBackEndImages/BlogImage/hospital-management-system-software-l.jpg");
+             background-image: url("https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg");
+             background-repeat: no-repeat;
+
 			}
 		</style>
+		
 	</head>
 	<body class="login">
 		<div class="row">

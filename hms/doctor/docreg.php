@@ -34,6 +34,16 @@ if($query)
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+		<style>
+			
+			body
+			{
+             background-image: url("https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg");
+             background-repeat: no-repeat;
+
+			}
+		</style>
+		
 		
 		<script type="text/javascript">
 function valid()
@@ -56,7 +66,7 @@ return true;
 		<div class="row">
 			<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 				<div class="logo margin-top-30">
-				<a href="../index.html"><h2>HMS | Patient Registration</h2></a>
+				<a href="../index.html"><h2>HMS | Doctor Registration</h2></a>
 				</div>
 				<!-- start: REGISTER BOX -->
 				<div class="box-register">
@@ -122,7 +132,7 @@ return true;
 							<div class="form-actions">
 								<p>
 									Already have an account?
-									<a href="user-login.php">
+									<a href="index.php">
 										Log-in
 									</a>
 								</p>
@@ -134,7 +144,7 @@ return true;
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved<a href="https://juventusworld.whats.bz"> Developed By Joash Monda Mokaya</span>
 					</div>
 
 				</div>

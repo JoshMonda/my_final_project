@@ -34,6 +34,16 @@ if($query)
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+
+		<style>
+			
+			body
+			{
+             background-image: url("https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg");
+             background-repeat: no-repeat;
+
+			}
+		</style>
 		
 		<script type="text/javascript">
 function valid()
