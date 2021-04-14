@@ -21,7 +21,7 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-right">
 							<!-- start: MESSAGES DROPDOWN -->
-							<li><img src="images/logo for hospital system.jpg"></li>
+							<li><img src="images/logo.png"></li>
 								<li  style="padding-top:2% ">
 								<h2>Hospital Management System</h2>
 							</li>

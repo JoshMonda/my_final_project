@@ -28,7 +28,8 @@ check_login();
 		<style>
 			body
 			{
-				background-image: url(https://www.sdglobaltech.com/wp-content/uploads/2017/01/The-Must-Have-modules-of-a-Hospital-Management-System-1200x675.jpg);
+				background-image: url(https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg);
+				background-repeat: no-repeat;
 			}
 
 

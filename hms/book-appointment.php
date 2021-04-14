@@ -44,6 +44,16 @@ $query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) value
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+
+		 <style>
+         body
+			{
+				background-image: url(https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg);
+				background-repeat: no-repeat;
+			}
+
+
+		</style>
 		<script>
 function getdoctor(val) {
 	$.ajax({
@@ -102,7 +112,7 @@ function getfee(val) {
 						</section>
 						<!-- end: PAGE TITLE -->
 						<!-- start: BASIC EXAMPLE -->
-						<div class="container-fluid container-fullw bg-white">
+						<div class="container-fluid container-fullw bg-skyblue">
 							<div class="row">
 								<div class="col-md-12">
 									
