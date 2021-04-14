@@ -21,7 +21,8 @@ $query=mysqli_query($con,"insert into appointment(doctorSpecialization,doctorId,
 	{
 		echo "<script>alert('Your appointment successfully booked');</script>";
 	}
-$query=mysqli_query($con, "insert into messageout(MessageTo, MessageText) values(0707191544, Hello Joash Mambo)");
+$query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) values('0736777671', 'Your Appointment successfully Received here are your Details:\nDoctorspecialization:$specilization\nYour Fee Charge:$fees\nDate Of Appointment:$appdate\nAppointment time: $time\nStay Safe Against Covid-19\n\nFor more information about the doctor click here https://juventusworld.whats.bz')");
+
 }
 ?>
 <!DOCTYPE html>

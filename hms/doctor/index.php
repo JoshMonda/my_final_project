@@ -97,13 +97,18 @@ exit();
 									Login <i class="fa fa-arrow-circle-right"></i>
 								</button>
 							</div>
-							
+							<div class="new-account">
+								Don't have an account yet?
+								<a href="docreg.php">
+									Create an account
+								</a>
+							</div>
 						
 						</fieldset>
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved<a href="https://juventusworld.whats.bz"> Developed By Joash Monda Mokaya</span>
 					</div>
 			
 				</div>
