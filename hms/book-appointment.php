@@ -15,13 +15,14 @@ $appdate=$_POST['appdate'];
 $time=$_POST['apptime'];
 $userstatus=1;
 $docstatus=1;
-$query=mysqli_query($con,"insert into appointment(doctorSpecialization,doctorId,userId,consultancyFees,appointmentDate,appointmentTime,userStatus,doctorStatus) values('$specilization','$doctorid','$userid','$fees','$appdate','$time','$userstatus','$docstatus')");
+$patcontact=$_POST['patcontact'];
+$query=mysqli_query($con,"insert into appointment(doctorSpecialization,doctorId,userId,consultancyFees,appointmentDate,appointmentTime,userStatus,doctorStatus,patcontact) values('$specilization','$doctorid','$userid','$fees','$appdate','$time','$userstatus','$docstatus','$patcontact')");
 
 	if($query)
 	{
 		echo "<script>alert('Your appointment successfully booked');</script>";
 	}
-$query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) values('0736777671', 'Your Appointment successfully Received here are your Details:\nDoctorspecialization:$specilization\nYour Fee Charge:$fees\nDate Of Appointment:$appdate\nAppointment time: $time\nStay Safe Against Covid-19\n\nFor more information about the doctor click here https://juventusworld.whats.bz')");
+$query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) values('$patcontact', 'Your Appointment successfully Received wait for the Doctors Response......\nHere are your Details:\nDoctorspecialization:$specilization\nYour Fee Charge:$fees\nDate Of Appointment:$appdate\nAppointment time: $time\nStay Safe Against Covid-19\n\nFor more information about the doctor click here https://juventusworld.whats.bz')");
 
 }
 ?>
@@ -173,12 +174,13 @@ while($row=mysqli_fetch_array($ret))
 														</div>
 														
 <div class="form-group">
-															<label for="AppointmentDate">
+																				</div>
+
+
+																				<label for="AppointmentDate">
 																Date
 															</label>
 <input class="form-control datepicker" name="appdate"  required="required" data-date-format="yyyy-mm-dd">
-	
-														</div>
 														
 <div class="form-group">
 															<label for="Appointmenttime">
@@ -187,7 +189,17 @@ while($row=mysqli_fetch_array($ret))
 													
 															</label>
 			<input class="form-control" name="apptime" id="timepicker1" required="required">eg : 10:00 PM
-														</div>														
+														</div>			
+	
+														<div class="form-group">
+															<label for="consultancyfees">
+																Patient Phone No
+															</label>
+					<input class="form-control" type="phone" name="patcontact" id="contact" required="required">
+						
+						
+														</div>
+																			
 														
 														<button type="submit" name="submit" class="btn btn-o btn-primary">
 															Submit

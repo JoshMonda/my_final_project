@@ -83,6 +83,7 @@ if(isset($_GET['cancel']))
 										<tbody>
 <?php
 $sql=mysqli_query($con,"select doctors.doctorName as docname,appointment.*  from appointment join doctors on doctors.id=appointment.doctorId where appointment.userId='".$_SESSION['id']."'");
+$query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) values('0707191544', 'Your Appointment Was Canceled')");
 $cnt=1;
 while($row=mysqli_fetch_array($sql))
 {
@@ -118,11 +119,17 @@ if(($row['userStatus']==1) && ($row['doctorStatus']==0))
 												<td >
 												<div class="visible-md visible-lg hidden-sm hidden-xs">
 							<?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
-{ ?>
+{ 
+	?>
 
 													
 	<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
-	<?php } else {
+
+	
+	<?php 
+} 
+
+	else {
 
 		echo "Canceled";
 		} ?>
