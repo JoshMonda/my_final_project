@@ -29,7 +29,7 @@ $query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) value
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>User  | Book Appointment</title>
+		<title>Patient  | Book Appointment</title>
 	
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -100,7 +100,8 @@ function getfee(val) {
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">User | Book Appointment</h1>
+									<img src="Appointment.png">
+									<h1 class="mainTitle">Patient | Book Appointment</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
@@ -121,13 +122,16 @@ function getfee(val) {
 										<div class="col-lg-8 col-md-12">
 											<div class="panel panel-white">
 												<div class="panel-heading">
-													<h5 class="panel-title">Book Appointment</h5>
+													<h5 class="panel-title"></h5>
 												</div>
 												<div class="panel-body">
 								<p style="color:red;"><?php echo htmlentities($_SESSION['msg1']);?>
 								<?php echo htmlentities($_SESSION['msg1']="");?></p>	
 													<form role="form" name="book" method="post" >
-														
+														<fieldset>
+														<legend>
+								Book Appointment
+							</legend>
 
 
 <div class="form-group">
@@ -204,6 +208,7 @@ while($row=mysqli_fetch_array($ret))
 														<button type="submit" name="submit" class="btn btn-o btn-primary">
 															Submit
 														</button>
+													</fieldset>
 													</form>
 												</div>
 											</div>

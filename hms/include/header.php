@@ -1,5 +1,5 @@
 <?php error_reporting(0);?>
-<header class="navbar navbar-default navbar-static-top">
+<header class="navbar navbar-default navbar-static-top bg-green">
 					<!-- start: NAVBAR HEADER -->
 					<div class="navbar-header">
 						<a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
@@ -21,15 +21,15 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-right">
 							<!-- start: MESSAGES DROPDOWN -->
-							<li><img src="images/logo.png"></li>
-								<li  style="padding-top:2% ">
+							<li><img src="assets/images/Logo.png" width="70%"></li>
+								<li  style="padding-top:2%; color: blue;">
 								<h2>Hospital Management System</h2>
 							</li>
 						
 						
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/images.jpg"> <span class="username">
+									<img src="assets/images/User-icon.png"> <span class="username">
 
 
 

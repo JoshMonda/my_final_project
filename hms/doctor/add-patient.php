@@ -22,6 +22,7 @@ echo "<script>alert('Patient info added Successfully');</script>";
 header('location:add-patient.php');
 
 }
+$query1=mysqli_query($con, "insert into messageout(MessageTo, MessageText) values('$patcontact',' Hello $patname You have been successfully added to the system\nThis is your email use it to register and set your password.\nEmail:$patemail\nStay Safe Against Covid-19\n\nFor more information about the doctor click here https://juventusworld.whats.bz')");
 }
 ?>
 <!DOCTYPE html>
@@ -43,6 +44,16 @@ header('location:add-patient.php');
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+
+		 <style>
+         body
+			{
+				background-image: url(https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg);
+				background-repeat: no-repeat;
+			}
+
+
+		</style>
 
 	<script>
 function userAvailability() {
@@ -84,7 +95,7 @@ error:function (){}
 </ol>
 </div>
 </section>
-<div class="container-fluid container-fullw bg-white">
+<div class="container-fluid container-fullw bg-skyblue">
 <div class="row">
 <div class="col-md-12">
 <div class="row margin-top-30">

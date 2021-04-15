@@ -102,7 +102,7 @@ exit();
 							</div>
 							<div class="new-account">
 								Don't have an account yet?
-								<a href="docreg.php">
+								<a href="reg.php">
 									Create an account
 								</a>
 							</div>

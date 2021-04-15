@@ -50,6 +50,7 @@ check_login();
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
+									<img src="adminn.png">
 									<h1 class="mainTitle">Admin | Dashboard</h1>
 																	</div>
 								<ol class="breadcrumb">

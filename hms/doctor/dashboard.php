@@ -31,7 +31,11 @@ check_login();
 				background-image: url(https://mchwebstorage.blob.core.windows.net/mch-website/images/og/c90dbbd4-12f2-4f8e-a5aa-6dd6dce968e7.jpg);
 				background-repeat: no-repeat;
 			}
-
+             
+              title
+              {
+              	color: blue;
+              }
 
 		</style>
 
@@ -51,6 +55,7 @@ check_login();
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
+									<img src="docweb.png">
 									<h1 class="mainTitle">Doctor | Dashboard</h1>
 																	</div>
 								<ol class="breadcrumb">
